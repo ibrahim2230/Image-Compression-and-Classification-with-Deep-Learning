@@ -51,9 +51,6 @@ MobileNetV2 achieves higher baseline accuracy
 ResNet-18 shows better robustness at higher compression levels
 Visualization
 
-The figure below shows classification accuracy versus compression ratio for both models.
-
-(Add your plot image here if you want)
 
 How to Run
 
