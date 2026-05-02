@@ -1,10 +1,11 @@
 # Image-Compression-and-Classification-with-Deep-Learning
 
-Overview
+**Overview**
 
 This project studies the impact of image compression on deep learning-based image classification. We use the Mini-ImageNet dataset and evaluate how different compression levels affect the performance of pre-trained convolutional neural networks.
 
-Objectives
+**Objectives**
+
 Apply transfer learning using pre-trained models
 Implement wavelet-based image compression
 Evaluate classification performance under different compression ratios
@@ -22,7 +23,8 @@ MobileNetV2
 
 Both models were fine-tuned on the Mini-ImageNet dataset.
 
-Methodology
+**Methodology**
+
 1. Baseline Training
 Models were initialized with ImageNet pre-trained weights
 Final layers were modified to classify 100 classes
@@ -39,11 +41,15 @@ Three compression levels were used:
 Models were tested on compressed images
 Accuracy was measured for each compression level
 Results were compared across models
-Results
+
+**Results**
+
 Model	Original	2:1	5:1	10:1
 ResNet-18	78.37%	77.69%	61.91%	20.91%
 MobileNetV2	80.39%	79.60%	56.76%	19.80%
-Analysis
+
+**Analysis**
+
 Light compression (2:1) has minimal impact on accuracy
 Moderate compression (5:1) causes noticeable performance degradation
 High compression (10:1) significantly reduces accuracy
@@ -52,7 +58,7 @@ ResNet-18 shows better robustness at higher compression levels
 Visualization
 
 
-How to Run
+**How to Run**
 
 Open the notebook:
 
@@ -70,6 +76,6 @@ numpy
 matplotlib
 scikit-learn
 
-Conclusion
+**Conclusion**
 
 Image compression affects classification performance significantly at high compression levels. There is a clear trade-off between storage efficiency and model accuracy. The results demonstrate that deep learning models rely on fine image details that are lost during aggressive compression.
